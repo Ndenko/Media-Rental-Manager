@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)http://www.cs.umd.edu/class/spring2021/cmsc131-01XX/projects/MediaRentalManager/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Project #9</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./Project #9_files/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        a:link {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <h1 id="main" class="h2"><a href="http://www.cs.umd.edu/class/spring2021/cmsc131-01XX/">CMSC131 Spring
+        2021</a></h1>
+
+    <div class="h3">Project #9, Media Rental Manager (Due Monday, May 10, 11:30 pm)</div>
+
+
+    <div class="h4">Objectives</div>
+    <p>To practice design, inheritance, ArrayList and javadoc.</p>
+
+    <p><strong>
+        You must implement this project by yourself. DO NOT POST ANY INFORMATION
+        in Piazza regarding the classes/interfaces you are planning to use in your design.
+        If you post any information you will be violating academic integrity rules.
+    </strong>
+    </p>
+
+    <p>This project have been used in previous semesters. Using any implementation
+        you might found online or from another student represents an academic integrity
+        violation.
+    </p>
+
+    <div class="h4">Overview</div>
+    <p>
+        For this project you will implement a simplified version of a system
+        that allows people to rent movies and music albums (similar to Netflix)
+        and receive them via mail. For this project you will define all the classes
+        needed (yes it is your design :)).
+    </p>
+
+    <div class="h4">Grading</div>
+    <ul>
+        <li>(60%) Public Tests</li>
+        <li>(10%) Release Tests</li>
+        <li>(15%) Design that includes at least three classes / interfaces (not including MediaRentalManager)</li>
+        <li>(10%) ArrayList Requirement</li>
+        <li>(5%) Javadoc</li>
+    </ul>
+
+    <div class="h4">Code Distribution</div>
+    <p>The project's code distribution is available at
+        <a href="http://www.cs.umd.edu/class/spring2021/cmsc131-01XX/projects/zipFiles/MediaRentalManager.zip">MediaRentalManager.zip</a>.
+        Download it and import it as you have imported our class examples.
+        The code distribution provides you with the following:
+    </p>
+    <ul>
+        <li>A package named <b>mediaRentalManager </b> - In this package you will provide
+            the implementation for the system. We have provided an interface(
+            <a href="http://www.cs.umd.edu/class/spring2021/cmsc131-01XX/projects/MediaRentalManager/doc/mediaRentalManager/MediaRentalManagerInt.html">MediaRentalManagerInt</a>
+            ) that specifies the functionality your system is expected to implement. The
+            complete javadoc for the project can be found at <a href="http://www.cs.umd.edu/class/spring2021/cmsc131-01XX/projects/MediaRentalManager/doc/index.html">javadoc</a>.
+        </li>
+
+        <li>A package named <b>tests </b> - Includes the public tests and
+            the shell file for your student tests.
+        </li>
+
+    </ul>
+
+    <div class="h4">Specifications</div>
+    <p>
+        You must define a class named <strong>MediaRentalManager</strong> (we did not provide it) that
+        implements the MediaRentalManagerInt interface functionality. You must define classes
+        that support the functionality specified by the interface. The following specifications
+        are associated with the project:
+    </p>
+    <ol>
+        <li>You should study the public tests and the output (files with .txt extension)
+            to familiarize yourself with the expected system functionality.
+        </li>
+
+        <li>Define a class named <strong>MediaRentalManager</strong>. Feel free to add
+            any instance variables you understand are needed or any private methods. Do not
+            add any public methods (beyond the ones specified in the MediaRentalManagerInt interface).
+        </li>
+
+        <li>
+            The media rental system keeps track of customers and media (movies and music albums).
+            A customer has a name, address, a plan and two lists (queues). One queue represent
+            the media the customer is interested in receiving and the second one represents the
+            media already received (rented) by the customer. There are two plans a customer
+            can have: UNLIMITED and LIMITED. UNLIMITED allows a customer to receive as many
+            media as they want; LIMITED restricts the media to a default value of 2 (this value
+            can be change via a manager method).
+            A movie has a title, a number of copies available and a rating (e.g., "PG"). An album
+            has a title, number of copies available, an artist and the songs that are part
+            of the album.
+        </li>
+
+        <li>You must define and use at least three classes / interfaces (not including MediaRentalManager) as part of
+            your design. <strong>These classes must support the functionality
+                of the system, otherwise you will not receive any credit.</strong>
+        </li>
+
+        <li>
+            The database for your system needs to be represented using two ArrayList objects.
+            One ArrayList will represent the customers present in the database; the second will
+            represent the media (movies and albums). This is the ArrayList requirement
+            provided in the <b>Grading</b> section.
+        </li>
+
+        <li>You must define javadoc for the classes you implement. You do not need to provide
+            javadoc comments for the MediaRentalManager class. Notice you do not need to run
+            the javadoc utility.
+        </li>
+
+        <li>
+            Regarding the searchMedia method: the songs parameter represents a substring
+            (fragment) or the full list of songs associated with the album. If the full list
+            is provided, you can assume commas will be part of the string. <strong>Hint:</strong> you may
+            want to consider using the indexOf method of the String class.
+        </li>
+
+        <li>Feel free to use Collections.sort to sort your data.
+        </li>
+
+        <li>Although you are not require to write student tests you are encourage to do so.
+        </li>
+
+        <li>
+            Not all the details associated with the project can be fully specified in this
+            description. The sooner you start working on the project the sooner you will
+            be able to address any doubts you may have.
+        </li>
+
+    </ol>
+
+
+    <div class="h4">Style</div>
+    <p>
+        Verify your project satisfies style requirements as defined at
+        <a href="http://www.cs.umd.edu/~nelson/classes/resources/javastyleguide/">Java Style Guide</a>.
+    </p>
+
+    <div class="h4">Submission</div>
+    <p>
+      Submit your project as usual.
+    </p>
+
+    <div class="h4">Academic Integrity</div>
+    <p>
+        Please make sure you read the academic integrity section of the syllabus so you understand
+        what is permissible in our programming projects. We want to remind you that we check your
+        project against other students' projects and any case of academic dishonesty will be referred
+        to the <a href="https://www.studentconduct.umd.edu/">University's Office of Student Conduct</a>.
+    </p>
+
+    <a href="https://www.umd.edu/web-accessibility/">Web Accessibility</a>
+
+</div>
+
+
+<script src="./Project #9_files/jquery-3.2.1.min.js.download"></script>
+<script src="./Project #9_files/bootstrap.min.js.download"></script>
+
+
+</body></html>
